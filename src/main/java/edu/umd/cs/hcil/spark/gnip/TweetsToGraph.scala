@@ -168,7 +168,7 @@ object TweetsToGraph {
   /**
     * Given an RDD of activities, build the GraphX model
     * @param tweets RDD of activities
-    * @param minDegee Minimum degree for a node to be included
+    * @param minDegree Minimum degree for a node to be included
     * @return GraphX graph model
     */
   def buildGraphxGraph(tweets : RDD[Activity], minDegree : Int) : Graph[TwitterUser, Int] = {
